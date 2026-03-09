@@ -5,8 +5,8 @@ def restart_service(service: str):
     print(f"[HANDLER] Restarting service: {service}")
 
 def scale_service(service: str, replicas: int):
-    print(f"[HANDLER] Saling service: {service} to {replicas} replicas")
-c
+    print(f"[HANDLER] Scaling service: {service} to {replicas} replicas")
+
 def ignore_alert(alert_id: str):
     print(f"[HANDLER] Ignoring alert: {alert_id}")
 
