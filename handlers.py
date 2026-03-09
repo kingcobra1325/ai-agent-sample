@@ -5,8 +5,8 @@ def restart_service(service: str):
     print(f"[HANDLER] Restarting service: {service}")
 
 def scale_service(service: str, replicas: int):
-    print(f"[HANDLER] Scaling service: {service} to {replicas} replicas")
-
+    print(f"[HANDLER] Saling service: {service} to {replicas} replicas")
+c
 def ignore_alert(alert_id: str):
     print(f"[HANDLER] Ignoring alert: {alert_id}")
 
@@ -14,7 +14,7 @@ def print_message(message: str):
     print(f"[HANDLER] {message}")
 
 
-def create_pull_request(repo: str, owner: str, branch: str, title: str, body: str = ""):
+def create_pull_request(repo: str, owner: str, branch: str, title: str, base:str="main", body: str = ""):
     """
     Creates a Pull Request on GitHub.
     
@@ -34,7 +34,7 @@ def create_pull_request(repo: str, owner: str, branch: str, title: str, body: st
     payload = {
         "title": title,
         "head": branch,  # branch with changes
-        "base": "main",  # target branch
+        "base": base,  # target branch
         "body": body
     }
 

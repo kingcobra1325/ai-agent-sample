@@ -22,6 +22,7 @@ system_context = {
             "owner": "str",
             "branch": "str",
             "title": "str",
+            "base": "str",
             "body": "str",
             }),
         ],
