@@ -52,7 +52,6 @@ failure on reason
     
     # Parse AI JSON output
     ai_decision = response.json()
-    print(ai_decision)
     # Assuming AI returns the JSON inside 'text' field (common in LM Studio/OpenRouter)
-    print(json.dumps(ai_decision, indent=3))
+    print(f"\n{json.dumps(ai_decision, indent=3)}\n")
     return json.loads(ai_decision["choices"][0]["message"]["content"])
